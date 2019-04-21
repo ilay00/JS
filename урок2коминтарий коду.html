@@ -1,0 +1,136 @@
+<meta charset="utf-8">
+<script>
+  //задача a
+    //1 пример
+//"use strict" ;
+let a=1, b=1,c,d; //так как переменных объявлено 4 a,b,c,d присвоино значений двум a=1 b=1 
+c=++a; //а в третью C помещина переменная A со значениям 1 и с добавленым префиксным инкриментом ++
+alert(c);//а он прибовляет 1 к числовому значению то сумма получается 2
+//четвертая переменная незадействона
+
+// 2пример
+ d=b++; //так как переменная без  значения =0 то пре добавлении постфиксного инкримента который прибовляет 1 
+ alert(d); //к значению числовой переменной происходет сложения 0+1=1 ответ = 1 
+ // 3 пример
+ c=(2+ ++a);//так как инкримент префиксный и имеит единицу то первым действиям происходет сложения 1+2 и получается сумма 3   
+ alert(c);//вторым действиям происходет обыкновенное сложения сумму 3 складевают с значениям 2 результат получается 5
+// 4 пример
+
+d=(2+ b++);//первым происходет присвоения 2 к переменной b++ вторым происходет сложения 2+b++ и в переменную d помищается  
+alert(d);//сумма 4
+alert(a);//третем действиям  b++ имеит 1 и происходет сложения 2+b++=1; и в условной переменной a помищается сумма 3 
+alert(b);//  а в b так же как и в а будет значения 3 
+
+
+
+
+//задача 3
+let a = +prompt("число 1" );
+let b = + prompt("число 2");
+if(a+b)
+{
+c = a + b;
+alert(c);
+}if(a-b)
+{
+c = a - b;
+alert(c);
+}
+ if(-a+b)
+{
+c = a + b;
+alert(c);
+}
+
+if(+a+b)
+{
+c = a - b;
+alert(c);
+}
+if(-a-b)
+{
+c = a + b;
+alert(c);
+}
+
+
+ //4 задача
+ 
+ function matchslog(sloga,slogb)
+ {
+   sum=sloga+slogb;
+ 
+ return sum;
+ }
+alert(matchslog(5,5));
+
+
+
+function matchVichit(vicita,ymenshb)
+ {
+   raz=vicita-ymenshb;
+ 
+ return raz;
+ }
+ alert(matchVichit(50,20));
+
+
+
+function matchUmnog(mnoja,mnojb)
+ {
+   proiz=mnoja*mnojb;
+ 
+ return proiz;
+ }
+ alert(matchUmnog(50,20));
+ 
+ 
+ 
+ function matchdeleniy(delim,delitel)
+ {
+   chast=delitel/delim;
+ 
+ return chast;
+ }
+ alert(matchdeleniy(50,20));
+ 
+ 
+ 
+  function mathOperation(arg1,arg2,operation)
+  {  
+    
+      switch(operation) {
+	      case '+':
+         alert(matchslog(arg1,arg2));
+			 break;
+  
+            case '-':
+         alert(matchVichit(arg1,arg2));
+			 break;
+			 
+			  case '*':
+            alert(matchUmnog(arg1,arg2));
+			 break;
+  
+            case '/':
+             alert(matchdeleniy(arg1,arg2));
+			 break;
+			 
+  
+  
+  }
+  }
+mathOperation(23,5,'*');
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
