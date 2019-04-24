@@ -2,11 +2,32 @@
 
 <script>
 
- var basket = ['samsung',];
-  basket.push('NEX');
- 
 
-    
-      
+
+let product = ['Nax', 'bbc', 'sony', 'samsyng'];
+ let price = ['787', '7689', '345', '545'];     
+  let a = prompt('Введите товар', '');
+ 
+   product.push('a');
+   let b = prompt('Введите цену','');
+    price.push(b);       
+            
+
+const s = priceSum(price);
+alert('Сумма к оплате:' + '---Пакупки--' + product.length + '---Цена--' + s)
+
+function priceSum(arr) {
+    let sum = 0;
+    if (price.length) {
+        sum = price.reduce((a, b) => {
+            return (parseFloat(a) || 0) + (parseFloat(b) || 0);
+        });
+    } else {
+        sum = 0;
+    }
+    return sum;
+}
+
+
 
 </script>
