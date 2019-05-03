@@ -1,0 +1,59 @@
+<meta charset= "utf-8" >
+<script>
+let a =100;
+
+
+function numbObject(numb)
+{     
+    if (numb!=1000)
+     {
+      }else{
+      alert("Не коректный ввод")  
+     };
+function splitToDigits(number) {
+  var digits = [];
+  while (number) {
+    digits.push(number % 10);
+    number = Math.floor(number/10);
+       }
+           
+            return digits;
+   };
+
+
+ let digitsArry=splitToDigits(numb);
+ objectDiget = {
+     
+        units:digitsArry[0],
+
+        tens:digitsArry[1],
+
+        hundreds:digitsArry[2]
+    };
+         
+         
+                 
+
+             return objectDiget;
+         
+             
+         	
+
+         		
+
+         	
+            
+         
+  // for ( var prop in objectDiget) {
+    // return  prop + ": " + objectDiget[prop];
+
+//}    
+ 
+}
+
+console.log(numbObject(a));
+
+
+
+
+</script>
