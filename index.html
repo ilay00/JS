@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang ="en">
+<head>
+<meta charset = "utf-8">
+<title>My Page</title>
+</head>
+<body>
+
+<h2 id ="div1">Some data in div-1</h2>
+<h2 id ="div2">Another data in div-2</h2>
+<h2 id ="div3">Anything else in div-3</h2>
+ <p><a id="myAnchor" href="#">Ссылка</a>
+  <button type="button" onclick="changeLink()">Изменить ссылку</button></p>
+  <ol id="list">
+<li>0</li>
+<li>1</li>
+<li>2</li>
+</ol>
+<div id= "clock" class = "example for you"></div>
+<script>
+	 /*var content2 = document.getElementById("div-2");
+     content2.innerHTML="Some";*/
+
+ function changeLink() {
+      document.getElementById('myAnchor').innerHTML="Новая ссылка";
+      document.getElementById('myAnchor').href="http://www.puzzleweb.ru";
+      document.getElementById('myAnchor').target="_blank";
+    }
+ 
+ function my_initiation () {
+var content2 = document .getElementById( "div-2" );
+content2.innerHTML = "Совершенно новая информация" ;
+}
+Window.onload = my_initiation;
+
+
+
+
+var newLi = document .createElement("li");
+newLi.innerHTML ="Привет, мир!";
+list.appendChild(newLi);
+
+var newLi = document .createElement("li");
+newLi.innerHTML = "Привет, мир!";
+list.insertBefore(newLi, list.children[3]);
+
+
+var elem = document .querySelector( "#clock" )
+// Выведем классы
+console .log(elem.classList); // DOMTokenList ["example", "for", "you"]
+// Добавим классы
+elem.classList.add( "ok" , "understand" );
+console .log(elem.classList); // DOMTokenList
+["example", "for", "you", "ok", "understand"]
+// Переключим классы
+elem.classList.toggle( "you" );
+elem.classList.toggle( "he" );
+console .log(elem.classList); // DOMTokenList
+["example", "for", "ok", "understand", "he"]
+// Проверим класс
+console .log(elem.classList.contains( "example" )); // true
+console .log(elem.classList.contains( "lol" )); // false
+// И удалим классы
+elem.classList.remove( "example" , "for" , "understand" , "he" );
+console .log(elem.classList);
+
+
+	</script>
+</body>
+</html>
