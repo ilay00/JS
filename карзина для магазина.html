@@ -1,31 +1,14 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Les</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script src="index.js"></script>
+    
 
-<script>
+</body>
+</html>
 
-
-
-let product = ['samsung'];
- let price = ['1'];     
-  let a = prompt('Введите товар', '');
- 
-   product.push(a);
-   let b = prompt('Введите цену','');
-    price.push(b);    
-          
-      
-function priceSum(arr) {
-    let sum = 0;
-    if (price.length) {
-        sum = price.reduce((a, b) => {
-            return (parseFloat(a) || 0) + (parseFloat(b) || 0);
-        });
-    } else {
-        sum = 0;
-    }
-    return sum;
-}
-   const s = priceSum(price);
-alert('Сумма к оплате:' + '---Пакупки--' + product.length  + '---Цена--' + s)
-
-
-</script>
