@@ -1,0 +1,26 @@
+
+html,body
+{   
+	height:100%;
+}
+*{margin-top:0;
+  padding-bottom:0;}
+.bigdiv{
+
+ width: 700px;
+ height: 700px;
+ 
+}
+.block
+{   
+	width:100px;
+	height:100px;
+	background-color:black;
+	display: inline-block; 
+}
+.red{
+	width: 100px;
+	height: 100px;
+	background-color:#fff;
+	display: inline-block;  
+}
