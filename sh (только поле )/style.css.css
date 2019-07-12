@@ -1,0 +1,14 @@
+html {
+    background: #cfcfcf;
+}
+
+table {
+    border-collapse: collapse;
+    background: rgb(128,128,128);
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+}
