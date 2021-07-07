@@ -1,0 +1,69 @@
+
+<meta charset= "utf-8" >
+<script>
+	
+	let price;
+	let Count;
+	let Product=[{name:'samsung',price:300,amount:2},
+	             {name:'bbc',price:300,amount:5},
+	             {name:'next',price:350,amount:1}
+	             
+
+	             ];
+	              
+                  
+					    
+					let Basket={
+                     goodList:Product,
+                     countTotalPrice:function(){
+                       let totalCost = 0;
+					   this.goodList.forEach(function (item) {
+					        totalCost += item.price * item.amount;   //счет цены
+					    });
+
+                               return totalCost;
+
+                 },
+                     
+                          countTotalNumber:function(){
+                           let totalCost = 0;
+					   this.goodList.forEach(function (item) {           // счет количества
+					            totalCost+=item.amount;
+					    });
+                                  return totalCost;
+
+                         },
+
+      /* putProduct:function(name,price,amount){
+        for(let i=0; i < this.goodList.length; i++){    
+                                    
+                                                           //в кансоль выводит но //зависает                     
+         this.goodList.push(name);
+          this.goodList.push(price);
+         this.goodList.push(amount); 
+          console.log(Product[i]);
+                                    
+
+                                   
+                                     
+            }; 
+                                     
+              }      */              
+
+
+                         
+                                      
+                            
+
+                          
+                       };
+                      
+                       console.log(Basket.countTotalPrice());
+                       console.log(Basket.countTotalNumber());
+                      
+                     //  Basket.putProduct('filips','123','3');
+                       
+                       
+                      
+
+</script> 
